@@ -15,16 +15,17 @@ ActiveRecord::Schema.define(version: 20180428211916) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.integer "age"
-    t.integer "VideoUsage_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["VideoUsage_id"], name: "index_users_on_VideoUsage_id"
   end
 
   create_table "video_usages", force: :cascade do |t|
     t.integer "video_id"
+    t.integer "users_id"
+    t.time "watched"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["users_id"], name: "index_video_usages_on_users_id"
     t.index ["video_id"], name: "index_video_usages_on_video_id"
   end
 

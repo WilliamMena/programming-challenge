@@ -8,9 +8,13 @@
 
 
 
-# video = Video.new
-# video.video_id = 123456
-# video.length = Time.new(1991, 11, 22, 0, 3, 12, '-04:00')
-# video.save
-#
+video = Video.new
+video.video_id = 123456
+video.length = Time.new(1991, 11, 22, 0, 3, 12, '-04:00')
+video.save
+
 # video.VideoUsage = VideoUsage.new
+
+# User.create(name: "William", Age: 26)
+
+# video.users=User.create(name: "William", Age: 26)
