@@ -1,3 +1,4 @@
 class User < ApplicationRecord
-  belongs_to :VideoUsage
+  has_many :VideoUsage
+  has_many :videos, through: :VideoUsage
 end

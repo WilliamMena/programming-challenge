@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+# video = Video.new
+# video.video_id = 123456
+# video.length = Time.new(1991, 11, 22, 0, 3, 12, '-04:00')
+# video.save
+#
+# video.VideoUsage = VideoUsage.new

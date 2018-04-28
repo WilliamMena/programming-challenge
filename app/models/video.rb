@@ -1,3 +1,4 @@
 class Video < ApplicationRecord
-  has_many :users, through: :VideoUsage
+  has_many :VideoUsage
+  has_many :users, :through => :VideoUsage
 end
