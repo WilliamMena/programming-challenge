@@ -1,4 +1,4 @@
 class VideoUsage < ApplicationRecord
   belongs_to :video
-  belongs_to :users
+  belongs_to :user
 end

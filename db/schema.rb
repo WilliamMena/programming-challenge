@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20180428211916) do
 
   create_table "video_usages", force: :cascade do |t|
     t.integer "video_id"
-    t.integer "users_id"
+    t.integer "user_id"
     t.time "watched"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

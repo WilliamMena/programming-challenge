@@ -13,8 +13,16 @@ video.video_id = 123456
 video.length = Time.new(1991, 11, 22, 0, 3, 12, '-04:00')
 video.save
 
+User.create(name: "William", age: 26)
+
+
+usage = VideoUsage.new
+usage.video = Video.first
+usage.user = User.first
+
+
 # video.VideoUsage = VideoUsage.new
 
-# User.create(name: "William", Age: 26)
+
 
 # video.users=User.create(name: "William", Age: 26)
