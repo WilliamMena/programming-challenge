@@ -1,4 +1,5 @@
 <h3>Graph for Video ID: <%= @video.video_id %></h3>
+<p><b>Length: </b><%= @video.length.strftime("%T") %></p>
 
 <% @video.VideoUsage.each do |usage| %>
   <p>Name: <%= usage.user.name %></p>
