@@ -39,6 +39,9 @@ class VideoController < ApplicationController
 
   def show
     @video = Video.find(params[:id])
+    length = @video.length.hour * 3600
+    length += @video.length.min * 60
+    length += @video.length.sec
 
     @data = []
     @video.VideoUsage.each do |video|
@@ -46,9 +49,22 @@ class VideoController < ApplicationController
       seconds += video.watched.min * 60
       seconds += video.watched.sec
 
-      @data << [video.user.name, seconds]
+      # length - seconds so it can show how much time remaining on the line graph. More accurate to audience retention
+      # @data << [video.user.name, length - seconds]
+
+      # this would show how much time a user spent watching the video, but the chart doesn't look like an audience retention graph
+      # @data << [video.user.name, seconds]
+
+      #percentage
+      @data << [video.user.name, (seconds.to_f / length.to_f) * 100.0]
     end
-    @data.sort! {|x,y| y[1] <=> x[1]}
+
+    # length - seconds
+    # @data.sort! {|x,y| y[1] <=> x[1]}
+
+    # seconds & percentage
+    @data.sort! {|x,y| x[1] <=> y[1]}
+
   end
 end
 

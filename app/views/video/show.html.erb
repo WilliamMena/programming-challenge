@@ -2,7 +2,7 @@
 <p><b>Length: </b><%= @video.length.strftime("%T") %></p>
 
 
-<%= line_chart @data, xtitle: "Time", ytitle: "Users" %>
+<%= line_chart @data, ytitle: "Time in seconds", points: false %>
 
 <% @video.VideoUsage.each do |usage| %>
   <p>Name: <%= usage.user.name %></p>
