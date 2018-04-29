@@ -10,11 +10,12 @@ class VideoController < ApplicationController
     @video.length = Time.at(random_time).utc
 
     if @video.save
-      @video.VideoUsage.create()
+
 
       # pick a random number for number of views on the specific video
       x = Random.rand(1..10)
       while x >= 0
+        @video.VideoUsage.create()
         @video.VideoUsage.last.user = (User.create(:name => Faker::Name.first_name, :age => Random.rand(18..60)))
         @video.VideoUsage.last.createTime
         @video.VideoUsage.last.save
