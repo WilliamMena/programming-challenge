@@ -12,7 +12,7 @@ class VideoController < ApplicationController
     if @video.save
 
 
-      # pick a random number for number of views on the specific video
+      # This will pick a random number deciding how many people will be created or how many views the video will get.
       x = Random.rand(1..10)
       while x >= 0
         @video.VideoUsage.create()
@@ -45,25 +45,35 @@ class VideoController < ApplicationController
 
     @data = []
     @video.VideoUsage.each do |video|
+      ## This calculates the amount of time in seconds, each person watched, so we can populate the line graph.
       seconds = video.watched.hour * 3600
       seconds += video.watched.min * 60
       seconds += video.watched.sec
 
-      # length - seconds so it can show how much time remaining on the line graph. More accurate to audience retention
-      # @data << [video.user.name, length - seconds]
-
-      # this would show how much time a user spent watching the video, but the chart doesn't look like an audience retention graph
+      ## Seconds Watched
+      ## this would show how much time a user spent watching the video, but the chart doesn't look like an audience retention graph
       # @data << [video.user.name, seconds]
 
-      #percentage
-      @data << [video.user.name, (seconds.to_f / length.to_f) * 100.0]
+      ## Percentage Watched
+      ## This will show the same chart as Seconds Watched but with percentages
+      # @data << [video.user.name, (seconds.to_f / length.to_f) * 100.0]
+
+      ## Length - Seconds
+      ## This will show the amount of seconds left in the video. So if a user saw 45 out of 50 seconds, the graph will show 5 seconds remaining. More accurate to audience retention
+      # @data << [video.user.name, length - seconds]
+
+      ## Percentage Left
+      ## Which is closer to the audience retention look that we want
+      @data << [video.user.name, (100 - (seconds.to_f / length.to_f) * 100.0).to_i]
     end
 
-    # length - seconds
-    # @data.sort! {|x,y| y[1] <=> x[1]}
+    ## Seconds Watched & Percentage Watched
+    # @data.sort! {|x,y| x[1] <=> y[1]}
 
-    # seconds & percentage
-    @data.sort! {|x,y| x[1] <=> y[1]}
+    ## Length - Seconds & Percentage Left
+    @data.sort! {|x,y| y[1] <=> x[1]}
+
+
 
   end
 end
