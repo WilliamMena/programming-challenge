@@ -1,2 +1,9 @@
 <h1>Video Index</h1>
-<h3><%= @videos.last.video_id %></h3>
+
+<% @videos.each do |video| %>
+  <p>
+    Video_ID: <%= video.video_id %>
+    <br>
+    Viewers: <%= video.VideoUsage.count %>
+  </p>
+<% end %>
