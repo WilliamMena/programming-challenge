@@ -11,10 +11,7 @@ class VideoUsage < ApplicationRecord
 
     length_in_sec = video_length.sec
     length_in_sec += (video_length.min * 60)
-    length_in_sec +=(video_length.hour * 3600)
-
-
-
+    length_in_sec += (video_length.hour * 3600)
 
     ##
     # Now that I have the length of the video in seconds. I now need to randomly create a number less than that time
