@@ -2874,3 +2874,58 @@ Processing by VideoController#create as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"WMRMRnAG+mgFsvRzycSnVBJWw5hKe8vOPioB2/bOJj4zcKMhs8631BXMPJPoWdTwmntYUwk9G9CWg9OPjiPByg==", "video_id"=>"1234", "commit"=>"Submit"}
 Unpermitted parameters: :utf8, :authenticity_token, :commit
 Unpermitted parameters: :utf8, :authenticity_token, :commit
+Started GET "/video" for 127.0.0.1 at 2018-04-28 22:23:03 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.5ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered video/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 174ms (Views: 155.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-28 22:23:11 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WMRMRnAG+mgFsvRzycSnVBJWw5hKe8vOPioB2/bOJj4zcKMhs8631BXMPJPoWdTwmntYUwk9G9CWg9OPjiPByg==", "video_id"=>"1234", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Completed 422 Unprocessable Entity in 105914ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotSaved (You cannot call create unless the parent is saved):
+  
+app/controllers/video_controller.rb:12:in `create'
+Started POST "/video" for 127.0.0.1 at 2018-04-28 22:27:21 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WMRMRnAG+mgFsvRzycSnVBJWw5hKe8vOPioB2/bOJj4zcKMhs8631BXMPJPoWdTwmntYUwk9G9CWg9OPjiPByg==", "video_id"=>"1234", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "videos" ("video_id", "length", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["video_id", 1234], ["length", "2000-01-01 00:07:19"], ["created_at", "2018-04-29 02:27:41.692798"], ["updated_at", "2018-04-29 02:27:41.692798"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mVideoUsage Load (0.4ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hollis"], ["age", 36], ["created_at", "2018-04-29 02:27:41.728908"], ["updated_at", "2018-04-29 02:27:41.728908"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 2], ["user_id", 10], ["watched", "2000-01-01 00:06:17"], ["created_at", "2018-04-29 02:27:41.732190"], ["updated_at", "2018-04-29 02:27:41.732190"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Merritt"], ["age", 44], ["created_at", "2018-04-29 02:27:41.736124"], ["updated_at", "2018-04-29 02:27:41.736124"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "video_usages" SET "user_id" = ?, "watched" = ?, "updated_at" = ? WHERE "video_usages"."id" = ?[0m  [["user_id", 11], ["watched", "2000-01-01 00:02:24"], ["updated_at", "2018-04-29 02:27:41.738570"], ["id", 10]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/video/2
+Completed 302 Found in 10445ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/video/2" for 127.0.0.1 at 2018-04-28 22:27:41 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  Rendered video/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
