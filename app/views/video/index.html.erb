@@ -2,7 +2,7 @@
 
 <% @videos.each do |video| %>
   <p>
-    Video_ID: <%= video.video_id %>
+    Video_ID: <%= link_to(video.video_id, "/video/#{video.id}") %>
     <br>
     Viewers: <%= video.VideoUsage.count %>
   </p>

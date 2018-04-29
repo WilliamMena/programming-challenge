@@ -3919,3 +3919,173 @@ Processing by VideoController#index as HTML
 Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:16:07 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  Rendered video/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 32ms (Views: 26.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:16:13 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  Rendered video/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:17:19 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  Rendered video/index.html.erb within layouts/application (205.8ms)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `link' for #<#<Class:0x007fbc8d2ff638>:0x007fbc8e9c4440>
+Did you mean?  link_to):
+    2: 
+    3: <% @videos.each do |video| %>
+    4:   <p>
+    5:     <%= link_to(link, "/video/#{video.id}") %>
+    6:     Video_ID: <%= video.video_id %>
+    7:     <br>
+    8:     Viewers: <%= video.VideoUsage.count %>
+  
+app/views/video/index.html.erb:5:in `block in _app_views_video_index_html_erb__1061447132008465293_70223911593740'
+app/views/video/index.html.erb:3:in `_app_views_video_index_html_erb__1061447132008465293_70223911593740'
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:17:33 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.4ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  Rendered video/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/video/1" for 127.0.0.1 at 2018-04-28 23:17:38 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 45ms (Views: 39.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/video/2" for 127.0.0.1 at 2018-04-28 23:17:42 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:17:55 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:17:56 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  Rendered video/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/video/1" for 127.0.0.1 at 2018-04-28 23:17:58 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:18:07 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  Rendered video/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:18:26 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  Rendered video/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:19:19 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  Rendered video/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/video/1" for 127.0.0.1 at 2018-04-28 23:19:22 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.3ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 34ms (Views: 28.7ms | ActiveRecord: 1.8ms)
+
+
