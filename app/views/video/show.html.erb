@@ -1,1 +1,7 @@
 <h3>Graph for Video ID: <%= @video.video_id %></h3>
+
+<% @video.VideoUsage.each do |usage| %>
+  <p>Name: <%= usage.user.name %></p>
+  <p>Watched until: <%= usage.watched.strftime("%T") %></p>
+
+<% end %>
