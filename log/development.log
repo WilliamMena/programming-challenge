@@ -4320,3 +4320,554 @@ Processing by VideoController#new as HTML
 Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:33:55 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  Rendered video/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'nvd3' with type 'text/css'
+Checked in these paths: 
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/config
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/images
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/stylesheets
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/node_modules):
+    4:     <title>ProgrammingChallenge</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4568896508229947417_70223902559460'
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:34:08 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'nvd3' with type 'text/css'
+Checked in these paths: 
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/config
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/images
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/stylesheets
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/node_modules):
+    4:     <title>ProgrammingChallenge</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4568896508229947417_70223902726440'
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:34:15 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'nvd3' with type 'text/css'
+Checked in these paths: 
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/config
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/images
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/stylesheets
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/node_modules):
+    4:     <title>ProgrammingChallenge</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4568896508229947417_70223874445220'
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:34:40 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'nvd3' with type 'text/css'
+Checked in these paths: 
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/config
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/images
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/stylesheets
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/node_modules):
+    4:     <title>ProgrammingChallenge</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4568896508229947417_70223871272600'
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:34:44 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'chart' with type 'application/javascript'
+Checked in these paths: 
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/config
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/images
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/stylesheets
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__4568896508229947417_70223875888260'
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:35:43 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'nvd3' with type 'text/css'
+Checked in these paths: 
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/config
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/images
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/stylesheets
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/node_modules):
+    4:     <title>ProgrammingChallenge</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4568896508229947417_70223871982940'
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:35:51 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'chart' with type 'application/javascript'
+Checked in these paths: 
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/config
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/images
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/assets/stylesheets
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/WilliamMena1/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__4568896508229947417_70223877074900'
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:36:13 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 6, expected 1)):
+    4:     <title>ProgrammingChallenge</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1880544571871332668_70112800712780'
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:36:38 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 162ms (Views: 158.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:36:43 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.3ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  Rendered video/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-28 23:36:44 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-28 23:36:44 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  Rendered video/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:36:45 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.3ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 77ms (Views: 67.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:37:01 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.4ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (214.2ms)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `size' for #<#<Class:0x007f88d12f7270>:0x007f88d07b5178>):
+     5:   <p>Name: <%= usage.user.name %></p>
+     6:   <p>Watched until: <%= usage.watched.strftime("%T") %></p>
+     7:   
+     8:   <%= gLine :id, size, data %>
+     9: 
+    10: <% end %>
+  
+app/views/video/show.html.erb:8:in `block in _app_views_video_show_html_erb___1584274359114042844_70112795014460'
+app/views/video/show.html.erb:4:in `_app_views_video_show_html_erb___1584274359114042844_70112795014460'
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:39:02 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (109.6ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `gLine' for #<#<Class:0x007f88d820a3d8>:0x007f88d82084c0>
+Did you mean?  line):
+     5:   <p>Name: <%= usage.user.name %></p>
+     6:   <p>Watched until: <%= usage.watched.strftime("%T") %></p>
+     7: 
+     8:   <%= gLine :id, @lineSize, @lineData %>
+     9: 
+    10: <% end %>
+  
+app/views/video/show.html.erb:8:in `block in _app_views_video_show_html_erb___1584274359114042844_70112859150560'
+app/views/video/show.html.erb:4:in `_app_views_video_show_html_erb___1584274359114042844_70112859150560'
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:40:29 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:40:48 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:41:14 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 60ms (Views: 34.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:41:35 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 61ms (Views: 45.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:44:03 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 66ms (Views: 52.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:45:41 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 60ms (Views: 43.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:46:46 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 6, expected 1)):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1880544571871332668_70112882417140'
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:46:50 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-28 23:47:12 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 77ms (Views: 59.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/video/3" for 127.0.0.1 at 2018-04-29 00:02:47 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendered video/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 1.2ms)
+
+
