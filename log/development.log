@@ -8541,3 +8541,234 @@ Processing by VideoController#new as HTML
 Completed 200 OK in 237ms (Views: 214.8ms | ActiveRecord: 0.6ms)
 
 
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 00:41:18 -0400
+Started GET "/video" for 127.0.0.1 at 2018-04-30 00:41:28 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 26.8ms | ActiveRecord: 0.9ms)
+
+
+Processing by VideoController#index as HTML
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 00:41:28 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendering video/index.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+Completed 200 OK in 65ms (Views: 49.8ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 4]]
+  Rendered video/index.html.erb within layouts/application (58.4ms)
+Completed 200 OK in 108ms (Views: 91.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-30 00:41:29 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.4ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 4]]
+  Rendered video/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 00:41:31 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 00:41:35 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 00:44:26 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-30 00:44:29 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 4]]
+  Rendered video/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 00:44:30 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 00:44:36 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ThrF72e6XcpveFXBWQdYkuZ6DG5n5s09oS7nKy2wF+N03afV4rewNDOqoheNJlUR5khWTAKLmGeZZTUxkcDutw==", "video_id"=>"123987", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "videos" ("video_id", "length", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["video_id", 123987], ["length", "2000-01-01 00:02:25"], ["created_at", "2018-04-30 04:44:36.627443"], ["updated_at", "2018-04-30 04:44:36.627443"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 5]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Max"], ["age", 54], ["created_at", "2018-04-30 04:44:37.134015"], ["updated_at", "2018-04-30 04:44:37.134015"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 35], ["watched", "2000-01-01 00:01:29"], ["created_at", "2018-04-30 04:44:37.136721"], ["updated_at", "2018-04-30 04:44:37.136721"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Loyce"], ["age", 47], ["created_at", "2018-04-30 04:44:37.141428"], ["updated_at", "2018-04-30 04:44:37.141428"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 36], ["watched", "2000-01-01 00:01:09"], ["created_at", "2018-04-30 04:44:37.143973"], ["updated_at", "2018-04-30 04:44:37.143973"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Aglae"], ["age", 28], ["created_at", "2018-04-30 04:44:37.148485"], ["updated_at", "2018-04-30 04:44:37.148485"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 37], ["watched", "2000-01-01 00:00:25"], ["created_at", "2018-04-30 04:44:37.150979"], ["updated_at", "2018-04-30 04:44:37.150979"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Eliseo"], ["age", 25], ["created_at", "2018-04-30 04:44:37.154553"], ["updated_at", "2018-04-30 04:44:37.154553"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 38], ["watched", "2000-01-01 00:01:10"], ["created_at", "2018-04-30 04:44:37.156839"], ["updated_at", "2018-04-30 04:44:37.156839"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Dana"], ["age", 47], ["created_at", "2018-04-30 04:44:37.161512"], ["updated_at", "2018-04-30 04:44:37.161512"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 39], ["watched", "2000-01-01 00:01:05"], ["created_at", "2018-04-30 04:44:37.164180"], ["updated_at", "2018-04-30 04:44:37.164180"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Troy"], ["age", 28], ["created_at", "2018-04-30 04:44:37.168355"], ["updated_at", "2018-04-30 04:44:37.168355"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 40], ["watched", "2000-01-01 00:01:17"], ["created_at", "2018-04-30 04:44:37.171652"], ["updated_at", "2018-04-30 04:44:37.171652"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mervin"], ["age", 22], ["created_at", "2018-04-30 04:44:37.176175"], ["updated_at", "2018-04-30 04:44:37.176175"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 41], ["watched", "2000-01-01 00:00:33"], ["created_at", "2018-04-30 04:44:37.178982"], ["updated_at", "2018-04-30 04:44:37.178982"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Arvilla"], ["age", 30], ["created_at", "2018-04-30 04:44:37.183098"], ["updated_at", "2018-04-30 04:44:37.183098"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 42], ["watched", "2000-01-01 00:00:56"], ["created_at", "2018-04-30 04:44:37.185223"], ["updated_at", "2018-04-30 04:44:37.185223"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ova"], ["age", 35], ["created_at", "2018-04-30 04:44:37.188960"], ["updated_at", "2018-04-30 04:44:37.188960"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 43], ["watched", "2000-01-01 00:01:15"], ["created_at", "2018-04-30 04:44:37.191207"], ["updated_at", "2018-04-30 04:44:37.191207"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Michele"], ["age", 54], ["created_at", "2018-04-30 04:44:37.195431"], ["updated_at", "2018-04-30 04:44:37.195431"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 5], ["user_id", 44], ["watched", "2000-01-01 00:00:52"], ["created_at", "2018-04-30 04:44:37.197772"], ["updated_at", "2018-04-30 04:44:37.197772"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/video/5
+Completed 302 Found in 575ms (ActiveRecord: 29.3ms)
+
+
+Started GET "/video/5" for 127.0.0.1 at 2018-04-30 00:44:37 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mVideoUsage Load (0.3ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  Rendered video/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 22.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 00:44:41 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/video" for 127.0.0.1 at 2018-04-30 00:44:43 -0400
+Processing by VideoController#index as HTML
+  Rendering video/index.html.erb within layouts/application
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT "videos".* FROM "videos"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 4]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 5]]
+  Rendered video/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 36ms (Views: 31.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/video/5" for 127.0.0.1 at 2018-04-30 00:44:44 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  Rendered video/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 33.3ms | ActiveRecord: 1.4ms)
+
+
