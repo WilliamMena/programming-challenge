@@ -9,8 +9,8 @@ class VideoController < ApplicationController
     @video = Video.new(video_params)
     @video.length = Time.at(random_time).utc
 
-    if @video.save
-
+    if @video.video_id != 0 && @video.save
+      binding.pry
 
       # This will pick a random number deciding how many people will be created or how many views the video will get.
       x = Random.rand(1..20)
@@ -27,7 +27,7 @@ class VideoController < ApplicationController
       redirect_to video_path(@video)
     else
       redirect_to new_video_path
-      flash.alert = @list.errors.full_messages[0]
+      flash.alert = "Error, accepted Video_ID's can't have any letters."
     end
 
 

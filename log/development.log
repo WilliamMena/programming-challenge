@@ -10033,3 +10033,374 @@ Processing by VideoController#show as HTML
 Completed 200 OK in 43ms (Views: 26.5ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:39:17 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 46ms (Views: 26.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:39:20 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C8FLZSKgGhuiGtVT1qndC1qvlVqK+MUyp5EmnrKhjlkxBilfp6335f7IIoUCiNCIWp3PeO+VkGif2vSEDtF3DQ==", "video_id"=>"as", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "videos" ("video_id", "length", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["video_id", 0], ["length", "2000-01-01 00:09:52"], ["created_at", "2018-04-30 05:41:16.425073"], ["updated_at", "2018-04-30 05:41:16.425073"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mVideoUsage Load (0.2ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 10]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Marietta"], ["age", 26], ["created_at", "2018-04-30 05:41:16.451407"], ["updated_at", "2018-04-30 05:41:16.451407"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 10], ["user_id", 127], ["watched", "2000-01-01 00:08:53"], ["created_at", "2018-04-30 05:41:16.454255"], ["updated_at", "2018-04-30 05:41:16.454255"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Georgianna"], ["age", 18], ["created_at", "2018-04-30 05:41:16.459680"], ["updated_at", "2018-04-30 05:41:16.459680"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 10], ["user_id", 128], ["watched", "2000-01-01 00:01:49"], ["created_at", "2018-04-30 05:41:16.462706"], ["updated_at", "2018-04-30 05:41:16.462706"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kane"], ["age", 26], ["created_at", "2018-04-30 05:41:16.467075"], ["updated_at", "2018-04-30 05:41:16.467075"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 10], ["user_id", 129], ["watched", "2000-01-01 00:08:13"], ["created_at", "2018-04-30 05:41:16.469168"], ["updated_at", "2018-04-30 05:41:16.469168"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Adella"], ["age", 27], ["created_at", "2018-04-30 05:41:16.472479"], ["updated_at", "2018-04-30 05:41:16.472479"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 10], ["user_id", 130], ["watched", "2000-01-01 00:09:15"], ["created_at", "2018-04-30 05:41:16.474614"], ["updated_at", "2018-04-30 05:41:16.474614"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Darian"], ["age", 58], ["created_at", "2018-04-30 05:41:16.486611"], ["updated_at", "2018-04-30 05:41:16.486611"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "video_usages" ("video_id", "user_id", "watched", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["video_id", 10], ["user_id", 131], ["watched", "2000-01-01 00:01:53"], ["created_at", "2018-04-30 05:41:16.488583"], ["updated_at", "2018-04-30 05:41:16.488583"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/video/10
+Completed 302 Found in 116148ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/video/10" for 127.0.0.1 at 2018-04-30 01:41:16 -0400
+Processing by VideoController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" WHERE "videos"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mVideoUsage Load (0.1ms)[0m  [1m[34mSELECT "video_usages".* FROM "video_usages" WHERE "video_usages"."video_id" = ?[0m  [["video_id", 10]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 127], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 128], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 129], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 130], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 131], ["LIMIT", 1]]
+  Rendering video/show.html.erb within layouts/application
+  Rendered video/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 22.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:41:22 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:41:28 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zg+79mos6DvUVN5mB1bG4H73nHA+p+nR4AGpBQTajWhcyNnM7yEFxYiGKbDTd8tjfsXGUlvKvIvYSnsfuKp0PA==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/video_controller.rb:30:in `create'
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:42:13 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g6nvFFWTMaZDLQZeRVHkKnifCFB+UrS1UWoUwzyKxULoHQBzllt8GlNTzr5kzJeO8LKTmz0UZKv5w8aXRGcitg==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:42:13 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:46:56 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"73CAqaXcaOzXX+t+jGnJYaxUU3QOIJhHsEw2qvxo9DiExG/OZhQlUMchI56t9LrFJHnIv01mSFkY5eT+hIUTzA==", "video_id"=>"as", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:46:56 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:47:17 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oc95MA6W6CwODsdG7OZY0C9exJMJk/qDFzqUoBEhjfrKe5ZXzV6lkB5wD6bNeyt0p3NfWErVKp2/k0b0acxqDg==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:47:17 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:49:39 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Na3nvMjb/Jpl/fZZYwRY8SZ/Q+IZopNAvrMj+q86cGheGQjbCxOxJnWDPrlCmStVrlLYKVrkQ14WGvGu19eXnA==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:49:39 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:50:36 -0400
+  
+SyntaxError (/Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/controllers/video_controller.rb:29: syntax error, unexpected '{', expecting keyword_end
+...ect_to new_video_path, :flash {:error => @video.errors.full_...
+...                               ^
+/Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/controllers/video_controller.rb:29: syntax error, unexpected '}', expecting keyword_end
+/Users/WilliamMena1/Development/work/bigThinkCodeChallenge/programming-challenge/app/controllers/video_controller.rb:92: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/video_controller.rb:29: syntax error, unexpected '{', expecting keyword_end
+app/controllers/video_controller.rb:29: syntax error, unexpected '}', expecting keyword_end
+app/controllers/video_controller.rb:92: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:50:56 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gofQjGp2WJ2sz5MKb5QMucB83a94QzOtw3epZoprpjTpMz/rqb4VIbyxW+pOCX8dSFFGZDsF47Nr3nsy8oZBwA==", "video_id"=>"ab", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:50:56 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:51:29 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qXrKqtDJYnw3EevmPZME7NT7sX1Hc2a9sYTA2877BULCziXNEwEvwCdvIwYcDndIXNYqtgQ1tqMZLRKPthbitg==", "video_id"=>"a", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:51:29 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:54:08 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wdnGlRsSIANNP1Giunq0ssrJZsI9sqcMAK+q/8sYoFWqbSny2Nptv11BmUKb58cWQuT9CX70dxKoBnirs/VHoQ==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:54:08 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:54:17 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:54:19 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:54:20 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:55:16 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:55:18 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q3xLyQ4hxPK2Oj6x6EMNz9UWRjy09FUb89PoOIqNXWKRuynziywpDOroyWc8YgBM1SQcHtGZAEHLmDoiNv2kNg==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:55:18 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:55:55 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 27.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:55:59 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8On0fqr9eEGxXA0DzN2rCYeaQlyrzRBEB/7qQTG0j3rKLpZEL/CVv+2O+tUY/KaKh6gYfs6gRR4/tThbjcR2Lg==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:55:59 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:56:19 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o8c+1eKN2suV3dCQb1ZgvVNJuGeMDxeMCtuET8Et0U3Ic9GyIUWXd4WjGHBOyxMZ22QjrM9Jx5KiclYbucA2uQ==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:56:19 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:56:24 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:56:33 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WNBm7/L/5azK6K0QbjhkBKu5DvvZE/Y09NnRMXtl8ChiFwTVd/IIUpY6Wsa6GWmHq4tU2bx+o27MkgMrxxUJfA==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:56:33 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 01:57:21 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 24.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:57:23 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dIPM9IkbAxSG6cSuWVba9HY2/jCvzhLkSrnxQ+Aqs8RORK7ODBbu6to7M3iNd9d3dgSkEsqjR75y8iNZXFpKkA==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:57:23 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:58:15 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 73ms (Views: 61.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:58:17 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9J082vBZBjzEVk3IMm9ZPgNb+Sh/cM4DEavi085gSG2fKdO9M5FLgNQohSgT8iqai3Zi4zw2Hh25AjCHto2vmQ==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:58:17 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/video" for 127.0.0.1 at 2018-04-30 01:58:52 -0400
+Processing by VideoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cGLZNamqA2iTXr/z4mMUYcQ6kD5jJabHzeR0Giqu38gb1jZSamJO1IMgdxPD/mfFTBcL9SBjdtllTaZOUkM4PA==", "video_id"=>"asd", "commit"=>"Submit"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Redirected to http://localhost:3000/video/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/video/new" for 127.0.0.1 at 2018-04-30 01:58:52 -0400
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+

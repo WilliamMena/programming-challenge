@@ -29,3 +29,8 @@ So I added a 3 column grid and made sure to enter my data only on the 2nd column
   grid-column-end: 2;
   border-bottom: 1px solid black;
 }
+
+.alert {
+  color: red;
+  font-weight: bold;
+}
