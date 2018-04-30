@@ -50,6 +50,13 @@ class VideoController < ApplicationController
       seconds += video.watched.min * 60
       seconds += video.watched.sec
 
+      ## IN THE COMMENTS BELOW YOU WILL SEE DIFFERENT WAYS TO PRESENT GRAPH DATA. BY DEFAULT, THE ONE CLOSEST TO SHOWING AN AUDIENCE RETENTION GRAPH IS USED.
+      ## TO PROPERLY USE THE DIFFERENT GRAPHS, YOU NEED TO COMMENT OUT LINE 74. THEN COMMENT IN THE LINE YOU WANT TO SHOW AND USE THE APPROPRIATE FUNCTION ON LINE 78 AND 81. LINES 77 AND 80 SHOW YOU WHICH WOULD BE APPROPRIATE TO USE.
+
+
+
+
+
       ## Seconds Watched
       ## this would show how much time a user spent watching the video, but the chart doesn't look like an audience retention graph
       # @data << [video.user.name, seconds]
