@@ -1,3 +1,7 @@
+## Installation
+
+To get this project running, you would need to enter in your terminal 'bundle install' to install all the required gems. Then 'rake db:migrate && rake db:seed && rails s' to set the database and have some sample data. Then 'rails s' will start your server. If Rails doesn't open up your browser for you, entering 'localhost:3000' in your browser should take you to the root page of the application.
+
 ## Objective
 
 We would like to see how you perform a task that represents an aspect of our typical work, albeit somewhat simplified in the interest of time.

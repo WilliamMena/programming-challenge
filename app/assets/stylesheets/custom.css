@@ -15,6 +15,7 @@
 /* added css grid because I wanted to show the viewers on each video screen but when I
 adjusted the bottom border to show 50%, it automatically kept my object pushed to the Left.
 So I added a 3 column grid and made sure to enter my data only on the 2nd column */
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;

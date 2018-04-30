@@ -8533,3 +8533,11 @@ Processing by VideoController#show as HTML
 Completed 200 OK in 39ms (Views: 26.8ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-30 00:27:26 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VideoController#new as HTML
+  Rendering video/new.html.erb within layouts/application
+  Rendered video/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 237ms (Views: 214.8ms | ActiveRecord: 0.6ms)
+
+
