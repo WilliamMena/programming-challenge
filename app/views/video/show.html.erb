@@ -1,10 +1,20 @@
-<h3>Graph for Video ID: <%= @video.video_id %></h3>
-<p><b>Length: </b><%= @video.length.strftime("%T") %></p>
+<div class="video_view">
+  <h3>Graph for Video ID: <%= @video.video_id %></h3>
+  <p><b>Length: </b><%= @video.length.strftime("%T") %></p>
 
 
-<%= line_chart @data, xtitle: "Drop off point by User", ytitle: "Percentage left to watch", points: false %>
+  <%= line_chart @data, xtitle: "Drop off point by User", ytitle: "Percentage left to watch", points: false %>
 
-<% @video.VideoUsage.each do |usage| %>
-  <p>Name: <%= usage.user.name %></p>
-  <p>Watched until: <%= usage.watched.strftime("%T") %></p>
-<% end %>
+
+  <br>
+  <br>
+  <h3>Video Audience</h3>
+  <div class="grid-container">
+    <% @video.VideoUsage.each do |usage| %>
+    <div class="viewer">
+      <p>Name: <%= usage.user.name %></p>
+      <p>Watched until: <%= usage.watched.strftime("%T") %></p>
+    </div>
+    <% end %>
+  </div>
+</div>
