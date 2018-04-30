@@ -8,9 +8,8 @@ class VideoController < ApplicationController
     random_time = Random.rand(100..600)
     @video = Video.new(video_params)
     @video.length = Time.at(random_time).utc
-
-    if @video.video_id != 0 && @video.save
-      binding.pry
+    
+    if !(/[a-zA-Z]/.match?(video_params["video_id"])) && @video.save
 
       # This will pick a random number deciding how many people will be created or how many views the video will get.
       x = Random.rand(1..20)
