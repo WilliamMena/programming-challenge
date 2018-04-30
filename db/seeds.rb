@@ -14,61 +14,51 @@ video.video_id = 123456
 video.length = Time.at(192).utc
 video.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "William", :age => 26))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "William", :age => 26))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "Rocio", :age => 26))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "Rocio", :age => 26))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "Natasha", :age => 21))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "Natasha", :age => 21))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "Mike", :age => 27))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "Mike", :age => 27))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "Teddy", :age => 28))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "Teddy", :age => 28))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "Tuto", :age => 25))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "Tuto", :age => 25))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "Jonathan", :age => 24))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "Jonathan", :age => 24))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "Jennifer", :age => 24))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "Jennifer", :age => 24))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-video.VideoUsage.create()
-video.VideoUsage.last.user = (User.create(:name => "Erika", :age => 42))
-video.VideoUsage.last.createTime
-video.VideoUsage.last.save
+video.videoUsage.create()
+video.videoUsage.last.user = (User.create(:name => "Erika", :age => 42))
+video.videoUsage.last.createTime
+video.videoUsage.last.save
 
-
-
-# user = User.create(name: "William", age: 26)
-
-
-# usage = VideoUsage.new
-# usage.video = Video.first
-# usage.user = User.first
-# usage.createTime
-# usage.save
 
 
 # removing 24 hours time-2592000

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :VideoUsage
-  has_many :videos, :through => :VideoUsage
+  has_many :videoUsage
+  has_many :videos, :through => :videoUsage
 
 end

@@ -10,7 +10,7 @@
   <br>
   <h3>Video Audience</h3>
   <div class="grid-container">
-    <% @video.VideoUsage.each do |usage| %>
+    <% @video.videoUsage.each do |usage| %>
     <div class="viewer">
       <p>Name: <%= usage.user.name %></p>
       <p>Watched until: <%= usage.watched.strftime("%T") %></p>

@@ -13,12 +13,12 @@ class VideoController < ApplicationController
 
 
       # This will pick a random number deciding how many people will be created or how many views the video will get.
-      x = Random.rand(1..10)
+      x = Random.rand(1..20)
       while x >= 0
-        @video.VideoUsage.create()
-        @video.VideoUsage.last.user = (User.create(:name => Faker::Name.first_name, :age => Random.rand(18..60)))
-        @video.VideoUsage.last.createTime
-        @video.VideoUsage.last.save
+        @video.videoUsage.create()
+        @video.videoUsage.last.user = (User.create(:name => Faker::Name.first_name, :age => Random.rand(18..60)))
+        @video.videoUsage.last.createTime
+        @video.videoUsage.last.save
         x -= 1
       end
 
@@ -44,7 +44,7 @@ class VideoController < ApplicationController
     length += @video.length.sec
 
     @data = []
-    @video.VideoUsage.each do |video|
+    @video.videoUsage.each do |video|
       ## This calculates the amount of time in seconds, each person watched, so we can populate the line graph.
       seconds = video.watched.hour * 3600
       seconds += video.watched.min * 60
